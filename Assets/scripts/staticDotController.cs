@@ -34,8 +34,12 @@ public class staticDotController : MonoBehaviour
         // blue Y: 0.35
         // red  Y: -1.5
 
+        // fronto-parallel offset:
         blue_ref.transform.position = new Vector3(8f + (perceptualOffset / 2), 0.0f, 0);
         red_ref.transform.position = new Vector3(8f - (perceptualOffset / 2), -1.4f, 0);
 
+        // vergence offset:
+        //blue_ref.transform.position = new Vector3(8.0f, 0.0f, 0f + (perceptualOffset / 2));
+        //red_ref.transform.position = new Vector3(8.0f, -1.4f, 0f - (perceptualOffset / 2));
     }
 }
